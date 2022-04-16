@@ -15,5 +15,5 @@ $ docker images
 * Now need to connect both images throuth network port
   Check available ports
 ```
-$ docker netwok ls
+$ docker network ls
 ```
