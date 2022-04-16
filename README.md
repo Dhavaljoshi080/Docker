@@ -17,3 +17,12 @@ $ docker images
 ```
 $ docker network ls
 ```
+* create network called mongo-network
+```
+$ docker create network mongo-network
+```
+* Now can run containter however we can specify few things like Env ver, container name, port and so on ( Enviornmental variable can get it from docker.hub/mongo )
+```
+$ docker run -p 27017:27017 -d -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo
+```
+
